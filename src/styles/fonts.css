@@ -1,0 +1,50 @@
+/* fonts.css: self-host or use local names if installed */
+@font-face {
+  font-family: "Reckless Neue";
+  src: url("../assets/reckless-neue-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../assets/Neue Haas Unica W1G.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G Heavy";
+  src: url("../assets/Neue Haas Unica W1G Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS variables for theme tokens */
+:root {
+  --color-primary-dark: #00233A;
+  --color-primary-base: #0392F1;
+  --color-primary-light: #C2DFF6;
+  --color-secondary-dark: #443642;
+  --color-secondary-base: #4E0BD4;
+  --color-secondary-light: #EAE4EC;
+  --color-tertiary: #E8DCCE;
+}
+
+/* Tailwind base overrides */
+@layer base {
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: "Neue Haas Unica W1G Heavy", "Neue Haas Unica W1G", ui-sans-serif, system-ui;
+    font-weight: 800;
+  }
+  body, .font-body {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Neue Haas Unica W1G";
+    font-style: normal;
+    font-synthesis: none;
+  }
+  b, strong, .font-body-strong {
+    font-family: "Neue Haas Unica W1G Heavy", "Neue Haas Unica W1G", ui-sans-serif, system-ui;
+    font-weight: 800;
+  }
+}
